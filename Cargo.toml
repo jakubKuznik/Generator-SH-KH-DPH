@@ -7,3 +7,4 @@ edition = "2024"
 time = { version = "0.3", features = ["parsing", "formatting", "macros", "local-offset"] }
 reqwest = { version = "0.12", features = ["blocking", "json"] }
 serde = { version = "1.0", features = ["derive"] }
+xmltree = "0.10"
