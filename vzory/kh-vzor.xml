@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pisemnost nazevSW="EPO MF ČR" verzeSW="45.10.1">
+<DPHKH1 verzePis="03.01">
+<VetaD dokument="KH1" k_uladis="DPH" mesic="6" rok="2025" zdobd_od="01.06.2025" zdobd_do="30.06.2025" d_poddp="17.07.2025" khdph_forma="B" />
+<VetaP c_pop="TODO_CISLO_POPISNE" c_telef="TODO_CISLO_TELEFONU" c_ufo="TODO_CISLO_FIN_URADU" c_pracufo="TODO_CISLO_PRAC_FIN_URADU" dic="TODO_DIC" email="TODO_EMAIL" jmeno="TODO_JMENO" naz_obce="TODO_NAZEV_OBCE" prijmeni="TODO_PRIJMENI" psc="TODO_PSC" sest_jmeno="TODO_SEST_JMENO" sest_prijmeni="TODO_SEST_PRIJMENI" sest_telef="TODO_SEST_TELEFON" stat="ČESKÁ REPUBLIKA" titul="TODO_TITUL" typ_ds="F" ulice="TODO ULICE" />
+<VetaB3 zakl_dane1="2045.45" dan1="429.55" />
+<VetaC pln23="2045.45" />
+</DPHKH1>
+<Kontrola><Soubor Delka="581" KC="54c22d8bc2159da64ac0213b04d7382a" Nazev="DPHKH1-0105235405-20250711-120346" c_ufo="463" /></Kontrola></Pisemnost>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pisemnost nazevSW="EPO MF ČR" verzeSW="45.10.1">
+<DPHSHV verzePis="02.01">
+<VetaD k_uladis="DPH" dokument="SHV" rok="2025" shvies_forma="R" d_poddp="11.07.2025" mesic="6" />
+<VetaP c_pop="TODO_CISLO_POPISNE" c_telef="TODO_CISLO_TELEFONU" c_ufo="TODO_CISLO_FIN_URADU" c_pracufo="TODO_CISLO_PRAC_FIN_URADU" dic="TODO_DIC" email="TODO_EMAIL" jmeno="TODO_JMENO" naz_obce="TODO_NAZEV_OBCE" prijmeni="TODO_PRIJMENI" psc="TODO_PSC" sest_jmeno="TODO_SEST_JMENO" sest_prijmeni="TODO_SEST_PRIJMENI" sest_telef="TODO_SEST_TELEFON" stat="ČESKÁ REPUBLIKA" titul="TODO_TITUL" typ_ds="F" ulice="TODO ULICE" />
+<VetaR por_c_stran="1" c_rad="1" k_stat="IE" c_vat="6390343O" k_pln_eu="3" pln_pocet="1" pln_hodnota="9999999" />
+</DPHSHV>
+</Pisemnost>

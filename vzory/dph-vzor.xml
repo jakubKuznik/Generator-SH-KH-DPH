@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pisemnost nazevSW="EPO MF ČR" verzeSW="45.10.1">
+<DPHDP3 verzePis="03.01">
+<VetaD c_okec="620200" d_poddp="11.07.2025" dapdph_forma="B" dokument="DP3" k_uladis="DPH" mesic="6" rok="2025" trans="A" typ_platce="P" zdobd_do="30.06.2025" zdobd_od="01.06.2025" />
+<VetaP c_pop="TODO_CISLO_POPISNE" c_telef="TODO_CISLO_TELEFONU" c_ufo="TODO_CISLO_FIN_URADU" c_pracufo="TODO_CISLO_PRAC_FIN_URADU" dic="TODO_DIC" email="TODO_EMAIL" jmeno="TODO_JMENO" naz_obce="TODO_NAZEV_OBCE" prijmeni="TODO_PRIJMENI" psc="TODO_PSC" sest_jmeno="TODO_SEST_JMENO" sest_prijmeni="TODO_SEST_PRIJMENI" sest_telef="TODO_SEST_TELEFON" stat="ČESKÁ REPUBLIKA" titul="TODO_TITUL" typ_ds="F" ulice="TODO ULICE" />
+<Veta1 dan_psl23_e="91" p_sl23_e="431" />
+<Veta2 pln_sluzby="9999999" />
+<Veta4 nar_zdp23="431" od_zdp23="91" odp_sum_kr="0" odp_sum_nar="521" odp_tuz23_nar="430" pln23="2046" />
+<Veta5 odp_uprav_kf="0" />
+<Veta6 dan_zocelk="91" dano="0" dano_da="0" dano_no="430" odp_zocelk="521" />
+<Prilohy>
+<ObecnaPriloha cislo="1" nazev="Faktura - softwarove sluzby" jm_souboru="kuznik-j-invoice-2025-01.pdf" kodovani="base64">
+<![CDATA[JVBERi0xLjYKJcOkw7zDtsOfCjIgMCBvYmoKPDwvTGVuZ3RoIDMgMCBSL0ZpbHRlci9GbGF0ZURl
+QUE1NTE2NTUyQjVGNUY+IF0KL0RvY0NoZWNrc3VtIC81RkMwMkREMjkxRkNGNTkzQTJBOTU5REND
+NTMzQzAxMwo+PgpzdGFydHhyZWYKNTEyNjQKJSVFT0YK
+]]>
+</ObecnaPriloha>
+<ObecnaPriloha cislo="2" nazev="Faktura - podnajem kancelare" jm_souboru="2025-01-podnajem.pdf" kodovani="base64">
+<![CDATA[JVBERi0xLjQKJeLjz9MKMSAwIG9iago8PC9QYXJhbXM8PC9TaXplIDUzMDEvTW9kRGF0ZShEOjIw
+MjUwMTIwMTYwMjM5KzAxJzAwJyk+Pi9TdWJ0eXBlL3RleHQjMmZ4bWwvRmlsdGVyL0ZsYXRlRGVj
+ODBiZTBkPl0vUm9vdCAyMSAwIFIvU2l6ZSAyMz4+CnN0YXJ0eHJlZgo0NzM3OQolJUVPRgo=
+]]>
+</ObecnaPriloha>
+<ObecnaPriloha cislo="3" nazev="Faktura - software" jm_souboru="2025-01-GPT.pdf" kodovani="base64">
+<![CDATA[JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PC9DcmVhdG9yIChDaHJvbWl1bSkKL1Byb2R1Y2VyIChT
+a2lhL1BERiBtOTYpCi9DcmVhdGlvbkRhdGUgKEQ6MjAyNTAyMDYxMjI1MDUrMDAnMDAnKQovTW9k
+MDM4MzAwIDAwMDAwIG4gCnRyYWlsZXIKPDwvU2l6ZSAyNQovUm9vdCAxMiAwIFIKL0luZm8gMSAw
+IFI+PgpzdGFydHhyZWYKMzg4MzYKJSVFT0Y=
+]]>
+</ObecnaPriloha>
+</Prilohy>
+</DPHDP3>
+<Kontrola><Soubor Delka="192307" KC="cfe8c81e0e541ea4f6f3fb0b97b16806" Nazev="DPHDP3-0105235405-20250711-120842" c_ufo="463" /></Kontrola></Pisemnost>
