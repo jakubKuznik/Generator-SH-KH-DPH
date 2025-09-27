@@ -1,6 +1,6 @@
 use time::{Date, Month};
-use Generator_SH_KH_DPH::rates::get_monthly_average_czk_rate;
-use Generator_SH_KH_DPH::date_func::{one_month_earlier};
+use generator_sh_kh_dph::rates::get_monthly_average_czk_rate;
+use generator_sh_kh_dph::date_func::{one_month_earlier};
 
 #[test]
 fn test_one_month_earlier_normal_case() {

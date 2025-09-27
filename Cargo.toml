@@ -1,5 +1,5 @@
 [package]
-name = "Generator-SH-KH-DPH"
+name = "generator_sh_kh_dph"
 version = "0.1.0"
 edition = "2024"
 

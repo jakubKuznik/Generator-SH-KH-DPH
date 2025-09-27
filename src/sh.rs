@@ -16,20 +16,12 @@ pub fn generate_sh(config: &Config) {
     // Navigate to <VetaD>
     if let Some(dphshv) = root.get_mut_child("DPHSHV") {
         if let Some(vetad) = dphshv.get_mut_child("VetaD") {
-            vetad
-                .attributes
-                .insert("d_poddp".to_string(), config.datum_podpisu.to_string());
-            vetad
-                .attributes
-                .insert("mesic".to_string(), config.datum_za_obdobi.month().to_string());
-            vetad
-                .attributes
-                .insert("rok".to_string(), config.datum_za_obdobi.year().to_string());
+            vetad.attributes.insert("d_poddp".to_string(), format!("{:02}.{:02}.{}", config.datum_podpisu.day(), config.datum_podpisu.month() as u8, config.datum_podpisu.year()));
+            vetad.attributes.insert("mesic".to_string(), (config.datum_za_obdobi.month() as u8).to_string());
+            vetad.attributes.insert("rok".to_string(), config.datum_za_obdobi.year().to_string());
         }
         if let Some(vetar) = dphshv.get_mut_child("VetaR") {
-            vetar
-                .attributes
-                .insert("pln_hodnota".to_string(), config.hodnota_plneni_czk_rounded.to_string());
+            vetar.attributes.insert("pln_hodnota".to_string(), config.hodnota_plneni_czk.to_string());
         }
     }
 
