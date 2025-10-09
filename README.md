@@ -76,5 +76,8 @@ Všechny šablony XML jsou uloženy ve složce `vzory/`.
 - Hodnoty v CZK se zaokrouhlují **nahoru na celé koruny**.  
 - Vygenerované XML odpovídá vzorům EPO (EPO MF ČR).  
 
+## Todo 
+- moznost datumu jako vstupniho argumentu, pro zpetne generovani faktur 
+
 ## Licence
 MIT
