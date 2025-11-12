@@ -87,13 +87,13 @@ fn parse_args() -> Config {
         }
     }
 
-    if config.hodnota_plneni_eur <= 0.0 {
+    if config.hodnota_plneni_eur < 0.0 {
         panic!("Error: --hodnota-plneni requires a positive int value");
     }
-    if config.prijata_zdanitelna_plneni_czk <= 0.0 {
+    if config.prijata_zdanitelna_plneni_czk < 0.0 {
         panic!("Error: --prijata-zdanitelna-plneni a positive int value");
     }
-    if config.prijeti_sluzeb_v_jinem_state_usd <= 0.0 {
+    if config.prijeti_sluzeb_v_jinem_state_usd < 0.0 {
         panic!("Error: --prijeti_sluzeb_v_jinem_state_usd a positive int value");
     }
     config
