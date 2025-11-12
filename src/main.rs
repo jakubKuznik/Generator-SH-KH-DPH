@@ -16,7 +16,7 @@ fn usage() -> &'static str {
             maximalne 10 000czk na jednotlivé položky\n
             Částka BEZ DPH!\n 
             podnajem kancelare, nakup mobilu\n
-        --prijeti-sluzeb_v_jinem_state <USD>\n
+        --prijeti-sluzeb-v-jinem-state <USD>\n
             Částka BEZ DPH!\n 
             licence chatGPT,
         "
@@ -88,13 +88,13 @@ fn parse_args() -> Config {
     }
 
     if config.hodnota_plneni_eur < 0.0 {
-        panic!("Error: --hodnota-plneni requires a positive int value");
+        panic!("Error: --hodnota-plneni requires a positive int value, it has: {}",config.hodnota_plneni_eur);
     }
     if config.prijata_zdanitelna_plneni_czk < 0.0 {
-        panic!("Error: --prijata-zdanitelna-plneni a positive int value");
+        panic!("Error: --prijata-zdanitelna-plneni a positive int value, it has: {}",config.prijata_zdanitelna_plneni_czk);
     }
     if config.prijeti_sluzeb_v_jinem_state_usd < 0.0 {
-        panic!("Error: --prijeti_sluzeb_v_jinem_state_usd a positive int value");
+        panic!("Error: --prijeti_sluzeb_v_jinem_state_usd a positive int value, it has: {}",config.prijeti_sluzeb_v_jinem_state_usd);
     }
     config
 }
