@@ -25,7 +25,7 @@ cargo build --release
 
 ## Použití
 ```shell
-./generator-sh-kh-dph --hodnota-plneni <EUR> --prijata-zdanitelna-plneni <CZK> --prijeti-sluzeb-v-jinem-state <USD>
+./generator-sh-kh-dph --hodnota-plneni <EUR> --prijata-zdanitelna-plneni <CZK> --prijeti-sluzeb-v-jinem-state <USD> [--datum-za-obdobi <YYYY-MM-DD>]
 ```
 
 ### Parametry
@@ -41,6 +41,11 @@ cargo build --release
 - `--prijeti-sluzeb-v-jinem-state <USD>` 
   Přijetí služeb z jiného členského státu (např. licence ChatGPT) v USD **bez_dph**.  
   Přepočet na CZK dle průměrného kurzu ČNB, dopočítané DPH 21 %.
+
+- `--datum-za-obdobi <YYYY-MM-DD>` nebo `--datum <YYYY-MM-DD>`
+  Volitelný parametr pro zpětné generování.
+  Přepíše výchozí období (jinak se bere minulý měsíc).
+  Zadaný měsíc/rok se použije i pro načtení měsíčního kurzu ČNB.
   
 
 ### Výstup
@@ -77,7 +82,6 @@ Všechny šablony XML jsou uloženy ve složce `vzory/`.
 - Vygenerované XML odpovídá vzorům EPO (EPO MF ČR).  
 
 ## Todo 
-- moznost datumu jako vstupniho argumentu, pro zpetne generovani faktur 
 - castky nad 10 000kc v ramci tuzemska  
 
 ## Licence
