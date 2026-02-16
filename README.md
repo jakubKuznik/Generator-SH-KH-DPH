@@ -78,6 +78,7 @@ Všechny šablony XML jsou uloženy ve složce `vzory/`.
 
 ## Todo 
 - moznost datumu jako vstupniho argumentu, pro zpetne generovani faktur 
+- castky nad 10 000kc v ramci tuzemska  
 
 ## Licence
 MIT
