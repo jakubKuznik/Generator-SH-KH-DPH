@@ -85,9 +85,11 @@ fn test_dph_rounding_bug_4110_74() {
         .unwrap();
     let root = Element::parse(xml_str.as_bytes()).unwrap();
     let dphdp3 = root.get_child("DPHDP3").unwrap();
+    let vetad = dphdp3.get_child("VetaD").unwrap();
     let veta4 = dphdp3.get_child("Veta4").unwrap();
     let veta6 = dphdp3.get_child("Veta6").unwrap();
 
+    assert_eq!(vetad.attributes.get("c_okec").map(String::as_str), Some("622000"));
     assert_eq!(veta4.attributes.get("pln23").map(String::as_str), Some("4111"));
     assert_eq!(veta4.attributes.get("odp_tuz23_nar").map(String::as_str), Some("863"));
     assert_eq!(veta6.attributes.get("dano_no").map(String::as_str), Some("863"));
