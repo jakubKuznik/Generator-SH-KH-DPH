@@ -19,7 +19,8 @@ pub fn generate_dph(config: &Config) {
     let zdobd_do = last_month_day(config.datum_za_obdobi.year(), config.datum_za_obdobi.month());
     
     let round_prijata = config.prijata_zdanitelna_plneni_czk.ceil() as i64;
-    let round_dph_prijata = config.dph_prijata_zdanitelna_plneni_czk.ceil() as i64;
+    let dph_prijata_two_decimals = ((round_prijata as f64 * 0.21) * 100.0).round() / 100.0;
+    let round_dph_prijata = dph_prijata_two_decimals.round() as i64;
             
     // odp_sum_nar = DPH za služby v ČR + DPH za služby v jiném státě
     let dph_celkem = round_dph_prijata + config.dph_prijeti_sluzeb_v_jinem_state_czk;
