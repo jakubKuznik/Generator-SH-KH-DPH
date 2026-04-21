@@ -16,6 +16,12 @@ Nástroj pro automatické generování tří XML souborů pro podání finančn�
 
 
 cargo run -- --hodnota-plneni 2773.47 --prijata-zdanitelna-plneni 2045.45 --prijeti-sluzeb-v-jinem-state 20.0
+
+# OpenAI faktura vystavená rovnou v Kč
+cargo run -- --hodnota-plneni 2773.47 --prijata-zdanitelna-plneni 2045.45 --prijeti-sluzeb-v-jinem-state-czk 412.40
+
+# Tuzemské daňové doklady nad 10 000 Kč včetně DPH
+cargo run -- --hodnota-plneni 2773.47 --prijata-zdanitelna-plneni 2045.45 --prijeti-sluzeb-v-jinem-state-czk 412.40 --prijata-zdanitelna-plneni-nad-10000 19865.29 dic 27082440 danovydoklad 589791468 datum 25.3.2026
 ```
 
 ## Build  
@@ -25,7 +31,7 @@ cargo build --release
 
 ## Použití
 ```shell
-./generator-sh-kh-dph --hodnota-plneni <EUR> --prijata-zdanitelna-plneni <CZK> --prijeti-sluzeb-v-jinem-state <USD> [--datum-za-obdobi <YYYY-MM-DD>]
+./generator-sh-kh-dph --hodnota-plneni <EUR> --prijata-zdanitelna-plneni <CZK> (--prijeti-sluzeb-v-jinem-state <USD> | --prijeti-sluzeb-v-jinem-state-czk <CZK>) [--datum-za-obdobi <YYYY-MM-DD>]
 ```
 
 ### Parametry
@@ -41,6 +47,17 @@ cargo build --release
 - `--prijeti-sluzeb-v-jinem-state <USD>` 
   Přijetí služeb z jiného členského státu (např. licence ChatGPT) v USD **bez_dph**.  
   Přepočet na CZK dle průměrného kurzu ČNB, dopočítané DPH 21 %.
+
+- `--prijeti-sluzeb-v-jinem-state-czk <CZK>`
+  Přijetí služeb z jiného členského státu (např. licence ChatGPT) už fakturované v CZK **bez_dph**.
+  Nepřepočítává se kurzem ČNB, jen se zaokrouhlí základ nahoru na celé Kč a dopočítá DPH 21 %.
+
+- `--prijata-zdanitelna-plneni-nad-10000 <CZK>`
+  Souhrn tuzemských daňových dokladů nad 10 000 Kč včetně DPH, bez DPH.
+  DPH se dopočítá automaticky sazbou 21 %.
+  Tyto částky se zahrnou do DPH ř. 40, do kontrolního řádku KH `VetaC/pln23` a do KH B.2.
+  Vyžaduje také `dic <DIC>`, `danovydoklad <TEXT>` a `datum <D.M.YYYY>`.
+  Hodnoty `pomer` a `zdph_44` se berou ze `vzory/KH-vzor-nad10.xml`.
 
 - `--datum-za-obdobi <YYYY-MM-DD>` nebo `--datum <YYYY-MM-DD>`
   Volitelný parametr pro zpětné generování.
@@ -82,7 +99,7 @@ Všechny šablony XML jsou uloženy ve složce `vzory/`.
 - Vygenerované XML odpovídá vzorům EPO (EPO MF ČR).  
 
 ## Todo 
-- castky nad 10 000kc v ramci tuzemska  
+- prijeti sluzeb v zahranici libovolna mena 
 
 ## Licence
 MIT

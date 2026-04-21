@@ -1,8 +1,8 @@
 pub mod date_func;
+pub mod dph;
+pub mod kh;
 pub mod rates;
 pub mod sh;
-pub mod kh;
-pub mod dph;
 
 use time::Date;
 
@@ -16,6 +16,11 @@ pub struct Config {
     pub hodnota_plneni_czk: i64,
     pub prijata_zdanitelna_plneni_czk: f64,
     pub dph_prijata_zdanitelna_plneni_czk: f64,
+    pub prijata_zdanitelna_plneni_nad_limit_czk: f64,
+    pub dph_prijata_zdanitelna_plneni_nad_limit_czk: f64,
+    pub prijata_zdanitelna_plneni_nad_limit_dic: Option<String>,
+    pub prijata_zdanitelna_plneni_nad_limit_doklad: Option<String>,
+    pub prijata_zdanitelna_plneni_nad_limit_dppd: Option<Date>,
     pub prijeti_sluzeb_v_jinem_state_usd: f64,
     pub prijeti_sluzeb_v_jinem_state_czk: i64,
     pub dph_prijeti_sluzeb_v_jinem_state_czk: i64,
